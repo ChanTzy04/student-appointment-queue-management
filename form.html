@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Service | PARSU Student Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="list.html"><span class="brand-mark">P</span><span><strong>PARSU</strong><small>STUDENT SERVICES</small></span></a>
+    <nav aria-label="Primary navigation"><a href="list.html">My appointments</a><a href="form.html" aria-current="page">Book a service</a><a href="list.html#queue">My queue</a></nav>
+    <a class="profile" href="#profile">Carlo Reyes <span>Student</span></a>
+  </header>
+  <main class="container narrow">
+    <p class="breadcrumb"><a href="list.html">My appointments</a> / Book a service</p>
+    <div class="page-heading"><div><p class="eyebrow">NEW REQUEST</p><h1>Book a service</h1><p class="muted">Choose a service and schedule for your appointment request.</p></div></div>
+    <form class="panel form-panel" action="list.html" method="get">
+      <div class="form-section"><h2>Appointment details</h2><p class="muted">Fields marked with <strong>*</strong> are required.</p>
+        <label for="service_id">Service *</label><select id="service_id" name="service_id" required><option value="">Choose a service</option><option value="1">Transcript of Records (TOR) — Registrar</option><option value="2">General Inquiry — Administration</option><option value="3">Guidance Appointment — Guidance and Counseling</option><option value="4">Student Assistance — Student Affairs / OSAS</option><option value="5">Basic Dental Check-up — University Clinic</option></select>
+        <label for="schedule_id">Schedule *</label><select id="schedule_id" name="schedule_id" required><option value="">Choose an available schedule</option><option value="1">October 4, 2026 · 9:00–11:00 AM · 20 slots</option><option value="2">October 4, 2026 · 10:00 AM–12:00 PM · 15 slots</option><option value="3">October 5, 2026 · 1:00–3:00 PM · 10 slots</option></select>
+        <label for="purpose">Purpose / request details *</label><textarea id="purpose" name="purpose" rows="5" maxlength="1000" required placeholder="Tell the office what you need help with."></textarea><p class="error" role="alert"><strong>Example validation error:</strong> Please choose a schedule before saving.</p>
+      </div>
+      <div class="form-actions"><a class="button button-secondary" href="list.html">Cancel</a><button class="button button-primary" type="submit">Save appointment</button></div>
+    </form>
+  </main>
+  <footer class="footer">Static form preview · The Save button will submit to PHP in Week 15.</footer>
+</body>
+</html>

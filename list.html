@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointments | PARSU Student Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="list.html"><span class="brand-mark">P</span><span><strong>PARSU</strong><small>STUDENT SERVICES</small></span></a>
+    <nav aria-label="Primary navigation"><a href="list.html" aria-current="page">My appointments</a><a href="form.html">Book a service</a><a href="#queue">My queue</a></nav>
+    <a class="profile" href="#profile">Carlo Reyes <span>Student</span></a>
+  </header>
+  <main class="container">
+    <div class="page-heading"><div><p class="eyebrow">STUDENT DASHBOARD</p><h1>My appointments</h1><p class="muted">Track requests from submission through completion.</p></div><a class="button button-primary" href="form.html">+ Book a service</a></div>
+    <section class="summary-grid" aria-label="Appointment summary"><div class="summary-card"><span>UPCOMING</span><strong>1</strong><small>Next: Oct 5, 2026</small></div><div class="summary-card"><span>PENDING</span><strong>1</strong><small>Awaiting staff review</small></div><div class="summary-card"><span>ACTIVE QUEUE</span><strong>#1</strong><small>Guidance appointment</small></div></section>
+    <section class="panel">
+      <div class="panel-heading"><div><h2>Appointment requests</h2><p class="muted">Five sample records from <code>seed.sql</code>.</p></div><label class="search-label" for="appointment-search">Search<input id="appointment-search" type="search" placeholder="Service or status"></label></div>
+      <div class="table-wrap"><table><caption class="sr-only">Appointment records</caption><thead><tr><th>Appointment</th><th>Service / office</th><th>Schedule</th><th>Status</th><th>Queue</th><th>Actions</th></tr></thead><tbody>
+        <tr><td><strong>A001</strong><small>Juan Dela Cruz</small></td><td>General Inquiry<small>Administration</small></td><td>Oct 4, 2026<small>10:00 AM–12:00 PM</small></td><td><span class="status status-confirmed">CONFIRMED</span></td><td>#1</td><td><a class="text-button" href="#view">View</a></td></tr>
+        <tr><td><strong>A002</strong><small>Maria Santos</small></td><td>Guidance Appointment<small>Guidance and Counseling</small></td><td>Oct 5, 2026<small>1:00–3:00 PM</small></td><td><span class="status status-serving">SERVING</span></td><td>#2</td><td><a class="text-button" href="#view">View</a></td></tr>
+        <tr><td><strong>A003</strong><small>Carlo Reyes</small></td><td>Student Assistance<small>Student Affairs / OSAS</small></td><td>Oct 4, 2026<small>10:00 AM–12:00 PM</small></td><td><span class="status status-pending">PENDING</span></td><td>—</td><td><a class="text-button" href="form.html">Edit</a></td></tr>
+        <tr><td><strong>A004</strong><small>Ana Villanueva</small></td><td>Transcript of Records<small>Registrar’s Office</small></td><td>Oct 4, 2026<small>9:00–11:00 AM</small></td><td><span class="status status-completed">COMPLETED</span></td><td>#3</td><td><a class="text-button" href="#view">View</a></td></tr>
+        <tr><td><strong>A005</strong><small>Liza Cruz</small></td><td>Basic Dental Check-up<small>University Clinic</small></td><td>Oct 6, 2026<small>8:00–10:00 AM</small></td><td><span class="status status-cancelled">CANCELLED</span></td><td>—</td><td><button class="text-button" type="button">Delete</button></td></tr>
+      </tbody></table></div>
+      <div class="empty-state"><strong>No records yet?</strong><span>New requests will appear here after you save the appointment form.</span><a href="form.html">Add the first appointment</a></div>
+    </section>
+  </main>
+  <footer class="footer">Week 14 static prototype · PHP and MySQL connection will be added in Week 15.</footer>
+</body>
+</html>
